@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const BASE_URL = "https://avyabackend.onrender.com";
+//   const BASE_URL = "https://avyabackend.onrender.com";
 //   const BASE_URL = "http://localhost:5000";
+let BASE_URL;
+if (
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1"
+) {
+  BASE_URL = "http://localhost:5000"; // Local backend
+} else {
+  BASE_URL = "https://avyabackend.onrender.com"; // Production backend
+}
 
   const API_URL = `${BASE_URL}/api/photos`;
   const galleryGrid = document.getElementById("gallery-grid");
