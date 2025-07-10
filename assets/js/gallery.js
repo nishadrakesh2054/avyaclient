@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://avyabackend.onrender.com";
+//   const BASE_URL = "http://localhost:5000";
 
   const API_URL = `${BASE_URL}/api/photos`;
   const galleryGrid = document.getElementById("gallery-grid");
