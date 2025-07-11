@@ -11,7 +11,9 @@ function formatDateDisplay(input) {
   const year = dateObj.getFullYear();
   return `${day} ${month}, ${year}`;
 }
-const BASE_URL='http://localhost:5000'
+// const BASE_URL='http://localhost:5000'
+const BASE_URL = "https://avyabackend.onrender.com";
+
 // --- Main Logic ---
 document.addEventListener("DOMContentLoaded", async () => {
   // --- Blog List/Page Logic ---

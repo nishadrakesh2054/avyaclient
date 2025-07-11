@@ -28,7 +28,9 @@ function getParagraphs(content) {
 // --- Main Logic ---
 document.addEventListener("DOMContentLoaded", async () => {
   // --- Service List Page ---
-  const BASE_URL='http://localhost:5000'
+//   const BASE_URL='http://localhost:5000'
+const BASE_URL = "https://avyabackend.onrender.com";
+
 
   const serviceListContainer = document.getElementById("service-list");
   if (serviceListContainer) {

@@ -9,7 +9,9 @@ function initBackgrounds() {
 // --- Main Logic ---
 document.addEventListener("DOMContentLoaded", async () => {
   // --- FAQ Section ---
-  const BASE_URL = "http://localhost:5000";
+//   const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://avyabackend.onrender.com";
+
 
   const faqContainer = document.getElementById("faqAccordion");
   if (faqContainer) {

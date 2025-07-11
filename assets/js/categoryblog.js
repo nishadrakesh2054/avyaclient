@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const BASE_URL='http://localhost:5000'
+    // const BASE_URL='http://localhost:5000'
+    const BASE_URL = "https://avyabackend.onrender.com";
+
+    
   const API_URL = `${BASE_URL}/api/blog`;
   const blogsContainer = document.getElementById("category-blogs");
   const urlParams = new URLSearchParams(window.location.search);

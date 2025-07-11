@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchTrainers() {
     const container = document.querySelector(".team-slider-1");
     if (!container) return;
-    const BASE_URL = "http://localhost:5000";
+    // const BASE_URL = "http://localhost:5000";
+    const BASE_URL = "https://avyabackend.onrender.com";
+
     try {
       const res = await fetch(`${BASE_URL}/api/trainers`);
       const data = await res.json();
@@ -63,7 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchFeedbacks() {
     const container = document.querySelector(".testi-slider-1");
     if (!container) return;
-    const BASE_URL = "http://localhost:5000";
+    // const BASE_URL = "http://localhost:5000";
+    const BASE_URL = "https://avyabackend.onrender.com";
+
 
     try {
       const res = await fetch(`${BASE_URL}/api/feedbacks`);

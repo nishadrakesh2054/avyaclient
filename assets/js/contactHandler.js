@@ -102,7 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
   }
-const BASE_URL='http://localhost:5000'
+// const BASE_URL='http://localhost:5000'
+const BASE_URL = "https://avyabackend.onrender.com";
+
   // Contact form
   handleFormSubmit({
     formId: "contact-form",

@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const BASE_URL='http://localhost:5000'
+    // const BASE_URL='http://localhost:5000'
+    const BASE_URL = "https://avyabackend.onrender.com";
+
 
     const res = await fetch(`${BASE_URL}/api/notice`);
     const data = await res.json();
