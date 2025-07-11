@@ -13,7 +13,7 @@
     background: #202020;
     border: 1px solid #303030;
     border-radius: 15px;
-    padding: 40px 40px 35px;
+    padding: 10px 10px 10px;
     display: flex;
     gap: 20px;
     &_icon {
@@ -52,7 +52,7 @@
         border: 1px solid $smoke-color2;
         display: block;
         border-radius: 15px;
-        padding: 40px;
+        padding: 15px;
         transition: 0.4s;
         .service-card_icon {
             height: 100px;
@@ -175,7 +175,7 @@
         max-width: 1029px;
     }
     .service-card {
-        padding: 30px 30px 25px;
+        padding: 10px 10px 10px;
     }
     .service-card.style2 {
         padding: 30px;

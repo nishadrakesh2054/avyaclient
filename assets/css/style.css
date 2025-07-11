@@ -11698,7 +11698,7 @@ span.select2-selection.select2-selection--single:focus {
   background: #202020;
   border: 1px solid #303030;
   border-radius: 15px;
-  padding: 40px 40px 35px;
+  padding: 10px 10px 10px;
   display: flex;
   gap: 20px;
 }
@@ -11741,8 +11741,8 @@ span.select2-selection.select2-selection--single:focus {
   background: var(--smoke-color2);
   border: 1px solid var(--smoke-color2);
   display: block;
-  border-radius: 15px;
-  padding: 40px;
+  border-radius:0;
+  padding:0;
   transition: 0.4s;
 }
 .service-card.style2 .service-card_icon {
@@ -11870,8 +11870,8 @@ span.select2-selection.select2-selection--single:focus {
     max-width: 1029px;
   }
   .service-card {
-    padding: 30px 30px 25px;
-  }
+    padding: 10px 10px 10px;
+}
   .service-card.style2 {
     padding: 30px;
   }
@@ -11893,7 +11893,7 @@ span.select2-selection.select2-selection--single:focus {
 /* Small devices */
 @media (max-width: 767px) {
   .service-card {
-    padding: 40px 40px 35px;
+    padding: 10px 10px 10px;
   }
   .service-slider-2 {
     margin: 0 -20px;
@@ -11929,9 +11929,15 @@ span.select2-selection.select2-selection--single:focus {
     transform: translateY(2px);
   }
   .service-card {
-    padding: 30px 30px 25px;
+    padding: 10px 10px 15px;
   }
 }
+@media (max-width: 768px) {
+    .service-card.style2 {
+      padding: 10px !important; /* adjust the value as needed */
+      margin: 10px 0;           /* optional: reduce vertical spacing */
+    }
+  }
 @media (max-width: 320px) {
   .service-bg-area .sec-shape-top {
     transform: translateY(-4px);

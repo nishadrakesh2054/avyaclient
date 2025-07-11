@@ -49,31 +49,52 @@ const BASE_URL = "https://avyabackend.onrender.com";
       data.docs.forEach((service) => {
         const card = document.createElement("div");
         card.className = "col-lg-4 col-md-6";
+        // card.innerHTML = `
+        //   <div class="service-card style2">
+        //     <div class="service-card_icon">
+        //       <img src="${BASE_URL}${service.icon?.url || ""}" alt="${
+        //   service.icon?.alt || "icon"
+        // }">
+        //     </div>
+        //     <div class="service-card_content">
+        //       <h4 class="service-card_title h5">
+        //         <a href="service-details.html?id=${service.id}">${
+        //   service.title
+        // }</a>
+        //       </h4>
+        //       <p class="service-card_text">
+        //         ${
+        //           truncateText(extractPlainText(service.content), 10) ||
+        //           "No description"
+        //         }
+        //       </p>
+        //       <a href="service-details.html?id=${
+        //         service.id
+        //       }" class="link-btn"><i class="fas fa-arrow-right"></i> Read More</a>
+        //     </div>
+        //   </div>
+        // `;
         card.innerHTML = `
-          <div class="service-card style2">
-            <div class="service-card_icon">
-              <img src="${BASE_URL}${service.icon?.url || ""}" alt="${
-          service.icon?.alt || "icon"
-        }">
-            </div>
-            <div class="service-card_content">
-              <h4 class="service-card_title h5">
-                <a href="service-details.html?id=${service.id}">${
-          service.title
-        }</a>
-              </h4>
-              <p class="service-card_text">
-                ${
-                  truncateText(extractPlainText(service.content), 10) ||
-                  "No description"
-                }
-              </p>
-              <a href="service-details.html?id=${
-                service.id
-              }" class="link-btn"><i class="fas fa-arrow-right"></i> Read More</a>
-            </div>
-          </div>
-        `;
+  <div class="service-card style2">
+    <img 
+      src="${BASE_URL}${service.icon?.url || ""}" 
+      alt="${service.icon?.alt || "icon"}"
+      class="service-card-img"
+      style="width: 100%; height: 200px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;"
+    >
+    <div class="service-card_content px-3 py-2">
+      <h4 class="service-card_title h5 mt-2 mb-0">
+        <a href="service-details.html?id=${service.id}">${service.title}</a>
+      </h4>
+      <p class="service-card_text ">
+        ${truncateText(extractPlainText(service.content), 10) || "No description"}
+      </p>
+      <a href="service-details.html?id=${service.id}" class="link-btn">
+        <i class="fas fa-arrow-right"></i> Read More
+      </a>
+    </div>
+  </div>
+`;
         serviceListContainer.appendChild(card);
       });
     } catch (err) {
