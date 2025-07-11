@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-//   const BASE_URL = "https://avyabackend.onrender.com";
+  const BASE_URL = "https://avyabackend.onrender.com";
 //   const BASE_URL = "http://localhost:5000";
-let BASE_URL;
-if (
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1"
-) {
-  BASE_URL = "http://localhost:5000"; // Local backend
-} else {
-  BASE_URL = "https://avyabackend.onrender.com"; // Production backend
-}
+// let BASE_URL;
+// if (
+//   window.location.hostname === "localhost" ||
+//   window.location.hostname === "127.0.0.1"
+// ) {
+//   BASE_URL = "http://localhost:5000"; // Local backend
+// } else {
+//   BASE_URL = "https://avyabackend.onrender.com"; // Production backend
+// }
 
   const API_URL = `${BASE_URL}/api/photos`;
   const galleryGrid = document.getElementById("gallery-grid");
   const pagination = document.getElementById("pagination");
   const filterButtons = document.querySelectorAll(".filter-menu-active button");
 
-  const IMAGES_PER_PAGE = 4;
+  const IMAGES_PER_PAGE = 6;
   let allImages = [];
   let filteredImages = [];
   let currentPage = 1;
@@ -74,7 +74,7 @@ if (
     const selected = filteredImages.slice(start, start + IMAGES_PER_PAGE);
     selected.forEach((item) => {
       const col = document.createElement("div");
-      col.className = "col-md-6";
+      col.className = "col-md-4";
       const thumb = document.createElement("div");
       thumb.className = "portfolio-thumb";
       const anchor = document.createElement("a");
