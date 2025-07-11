@@ -158,7 +158,7 @@ const BASE_URL = "https://avyabackend.onrender.com";
                     </span>
                     <h1 class="hero-title text-white" data-ani="slideinup" data-ani-delay="0.1s">
                       ${banner.title.replace(
-                        /(Swimming|positive |Fitness|wellness)/gi,
+                        /(Strong|mind |Deeper|Swim|Therapy|Healing|Care)/gi,
                         "<span>$1</span>"
                       )}
                     </h1>
